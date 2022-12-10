@@ -20,17 +20,17 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: min(3rem, 8vw);
     padding: 1rem;
 }
 
 h2 {
-    font-size: 6rem;
+    font-size: min(6rem, 10vw);
     margin: auto;
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: min(1rem, 1.5vw);
     margin: auto;
 }
 
