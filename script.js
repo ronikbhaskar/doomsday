@@ -29,7 +29,7 @@ function secretButtonClick() {
 
 function updateTime() {
     const currentDate = new Date();
-    const diff = doomsday.getTime() - currentDate.getTime();
+    const diff = Math.max(doomsday.getTime() - currentDate.getTime(), 0);
     seconds = Math.trunc(diff / 1000) % 60;
     secondCount.innerText = ("00" + seconds).slice(-2);
     
